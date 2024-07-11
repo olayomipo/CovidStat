@@ -7,9 +7,13 @@ const fetchCovidData = () => async (dispatch) => {
     // const response = await axios.get('https://covidnigeria.herokuapp.com/api');
     // Supposed to use this but this api is not working
 
-    const response = await axios.get('../../data/data.json');
+    // const response = await axios.get('../../data/data.json');
+    const response = await axios.get('https://raw.githubusercontent.com/olayomipo/CovidStat/main/data/data.json');
+    
+
+    
     // const response = await fetch('data.json')
-    // console.log(response)
+    console.log(response)
 
     // var data = data
     
