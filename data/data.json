@@ -1,0 +1,52 @@
+{
+    "data": {
+      "totalSamplesTested": "123456",
+      "totalConfirmedCases": 7890,
+      "totalActiveCases": 1234,
+      "discharged": 6000,
+      "death": 656,
+      "states": [
+        {
+          "state": "Lagos",
+          "_id": "1",
+          "confirmedCases": 2500,
+          "casesOnAdmission": 800,
+          "discharged": 1600,
+          "death": 100
+        },
+        {
+          "state": "FCT",
+          "_id": "2",
+          "confirmedCases": 1200,
+          "casesOnAdmission": 300,
+          "discharged": 850,
+          "death": 50
+        },
+        {
+          "state": "Kano",
+          "_id": "3",
+          "confirmedCases": 800,
+          "casesOnAdmission": 200,
+          "discharged": 550,
+          "death": 50
+        },
+        {
+          "state": "Rivers",
+          "_id": "4",
+          "confirmedCases": 700,
+          "casesOnAdmission": 150,
+          "discharged": 500,
+          "death": 50
+        },
+        {
+          "state": "Ogun",
+          "_id": "5",
+          "confirmedCases": 600,
+          "casesOnAdmission": 100,
+          "discharged": 450,
+          "death": 50
+        }
+      ]
+    }
+  }
+  
