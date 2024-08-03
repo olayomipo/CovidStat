@@ -4,20 +4,19 @@ import axios from 'axios';
 
 const fetchCovidData = () => async (dispatch) => {
   try {
-    // const response = await axios.get('https://covidnigeria.herokuapp.com/api');
-    // Supposed to use this but this api is not working
 
-    // const response = await axios.get('../../data/data.json');
-    const response = await axios.get('https://raw.githubusercontent.com/olayomipo/CovidStat/main/data/data.json');
-    
+    // const api_url = 'https://covidnigeria.herokuapp.com/api';
+    // const api_url = 'https://raw.githubusercontent.com/olayomipo/CovidStat/main/data/data.json';
+    const api_url = 'https://api.covidtracking.com/v1/states/current.json';
 
+    const response = await axios.get(api_url);
     
     // const response = await fetch('data.json')
     console.log(response)
 
     // var data = data
     
-    dispatch({ type: 'FETCH_COVID_DATA_SUCCESS', payload: response.data.data });
+    dispatch({ type: 'FETCH_COVID_DATA_SUCCESS', payload: response.data});
   } catch (error) {
     dispatch({ type: 'FETCH_COVID_DATA_FAILURE', payload: error.message });
   }
