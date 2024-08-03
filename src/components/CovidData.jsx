@@ -33,7 +33,7 @@ const CovidData = () => {
     <div className="full mt-2 mb-2">
       <div className="container">
           <div className="jumbotron">
-              <h1 className="display-4">COVID-19 Data for Nigeria</h1>
+              <h1 className="display-4">COVID-19 Data for America</h1>
               <p className="lead">Stay informed about the latest statistics:</p>
               <ul className="list-unstyled">
                   <li>Total Tested: {summation.totalSamplesTested}</li>
